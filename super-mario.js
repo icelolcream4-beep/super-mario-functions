@@ -29,6 +29,7 @@ function draw() {
 
   drawPlayer();
 
+
 if (keyIsDown(65) === true) x = x - 10;
 if (keyIsDown(68) === true) x = x + 10;
 if (x >= 620) x = -30;
