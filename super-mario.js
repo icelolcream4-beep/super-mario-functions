@@ -19,11 +19,13 @@ function draw() {
   updateJump();
 
   drawPlayer();
-}
 
+if (keyIsDown(65) === true) x = x - 5;
+if (keyIsDown(68) === true) x = x + 5;
+}
 // ==================================================
 // JUMP FUNCTION
-// ==================================================
+// ==================== ==============================
 function jump() {
   if (!jumping) {
     jumping = true;
@@ -32,11 +34,8 @@ function jump() {
 }
 
 function keyPressed() {
-  if (key === " ") jump();
-
+  if (key === "w") jump();
 }
-
-
 // ==================================================
 // 🧠 JUMP LOGIC
 // ==================================================
